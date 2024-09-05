@@ -1,0 +1,78 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="/enviar" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+        
+        <label for="Idade">Idade:</label>
+        <input type="number" id="idade" name="idade" required>
+        <br><br>
+        
+        <label for="sexo">Sexo:</label>
+        <input type="radio" id="masculino" name="sexo" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="feminino" name="sexo" value="feminino">
+        <label for="feminino">Feminino</label>
+        <br><br>
+
+        <label for="residencia">Loca de residência:</label>
+        <input type="text" id="residencia" name="residencia">
+        <br><br>
+        
+        <h3>Como se sente?</h3>
+        
+        <label for="gerais">Você tem sentido uma tristeza persistente ou falta de interesse <br>
+        nas atividades diárias?
+        </label> <br>
+        <input type="radio" id="sim" name="sintomas" value="sim">
+        <label for="sim">sim</label>
+        <input type="radio" id="nao" name="sintomas" value="não">
+        <label for="nao">não</label>
+        <br><br>
+        <label for="gerais">Experimentou alterações de apetite(aumento ou diminuição significativos)?
+        </label> <br>
+        <input type="radio" id="sim" name="sintomas" value="sim">
+        <label for="sim">sim</label>
+        <input type="radio" id="nao" name="sintomas" value="não">
+        <label for="nao">não</label>
+        <br><br>
+
+        <label for="gerais">Tem enfrentado dificuldades para dormir(insônia ou sono excessivo)?
+        </label><br>
+        <input type="radio" id="sim" name="sintomas" value="sim">
+        <label for="sim">sim</label>
+        <input type="radio" id="nao" name="sintomas" value="não">
+        <label for="nao">não</label>
+        <br>
+
+        <h3>Como está sua ansiedade?</h3>
+
+        <label for="">Você tem sentido uma tensão constante, nervosismo ou preocupação <br>
+        excessiva?
+        </label><br>
+        <input type="radio" name="ansiedade" id="sim">
+        <label for="sim">sim</label>
+        <input type="radio" name="ansiedade" id="nao">
+        <label for="ansiedade">não</label>
+        <br><br>
+
+        <label for="">Tem esperimentado ataques de pânico ou sensação de <br>
+        falta de ar?
+        </label><br>
+        <input type="radio" name="" id="sim">
+        <label for="">sim</label>
+        <input type="radio" name="" id="nao">
+        <label for="">não</label>
+        <br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
