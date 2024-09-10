@@ -14,17 +14,17 @@
 
     <main>
         
-        <form action="">
+        <form action="php/create.php" method="get">
             <div id="cadastro">
                 <h1>Cadastrar-se</h1>
 
-                <input class="login-input" placeholder="Nome" type="text" id="login">
-                <input class="login-input" placeholder="Sobrenome" type="text" id="login"> <br>
-                <input class="login-input" placeholder="Email" type="text" id="login">
-                <input class="login-input" placeholder="Senha" type="password" name="senha" id="senha"> <br>
-                <input class="login-input" placeholder="Confirmar senha" type="password" name="senha" id="senha"> <br>
+                <input class="login-input" placeholder="Nome" type="text" id="login" name="nome">
+                <input class="login-input" placeholder="Sobrenome" type="text" id="login" name="sobrenome"> <br>
+                <input class="login-input" placeholder="Email" type="text" id="login" name="email">
+                <input class="login-input" placeholder="Senha" type="password" name="senha" id="senha" name="senha"> <br>
+                <input class="login-input" placeholder="Confirmar senha" type="password" id="senha" name="confirmar"> <br>
                 
-                <input type="button" id="btn" value="Cadastrar"/>
+                <input type="submit" id="btn" value="Cadastrar"/>
 
             
             </div> 
