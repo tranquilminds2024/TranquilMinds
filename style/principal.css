@@ -16,6 +16,7 @@ header{
     margin-left: 10px;
     float: left;
     border-radius: 10px;
+    border-color:  rgb(130, 210, 223);
 }
 
 #cuidado{
@@ -29,11 +30,11 @@ header{
 
 #beneficios{
     display: flex;
-    width: 30%;
-    text-align: justify;
+    width: 40%;
+    text-align:justify;
     margin-bottom: none;
     padding: 20px;
-    padding-left: 200px;
+    padding-left: 125px;
     margin-top: 25px;
 }
 
@@ -78,13 +79,13 @@ nav{
 }
 
 .fonte{
- font-family: Georgia, 'Times New Roman', Times, serif;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .fonte{
     color: white;
     -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color:  rgb(130, 210, 223) ;
 }
 
 a{
