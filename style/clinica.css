@@ -1,107 +1,145 @@
-#logo{
-    width: 100px;
-    margin-left: 10px;
+/* Estilo global */
+body {
+    background-image: url('../img/2.png');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-header{
+
+/* Cabeçalho */
+header {
     display: flex;
     align-items: center;
+    justify-content: center; /* Centraliza o conteúdo do cabeçalho */
     font-size: 25px;
-    margin: 0%;
-    height: 10%;
-    padding-top: 20px;
+    height: 10vh;
+    padding: 20px 10px;
+    background-color: rgba(130, 210, 223, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
-nav{
+#logo {
+    width: 100px;
+    margin-right: 20px; /* Espaço entre o logo e o menu */
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Centraliza os links de navegação */
     width: 100%;
-    align-items: center;
-    
 }
 
-#menu a{
-    margin-left: 50px;
+#menu {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaço entre os links */
+}
+
+#menu a {
     font-size: 18px;
     text-decoration: none;
     color: black;
+    transition: color 0.2s, font-size 0.2s;
 }
 
-#menu a:hover{
-    cursor: pointer;
-    color: rgba(48, 48, 48, 0.692);
-    transition: 0.2s;
+#menu a:hover {
+    color: rgba(48, 48, 48, 0.8);
     font-size: 20px;
 }
 
-body{
-    background-image: url(../img/2.png);
-}
-
-#clinica{
+/* Seções principais */
+#clinica {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 5%;
-    padding-left: 20%;
+    flex-wrap: wrap;
+    padding: 5% 10%;
 }
 
-#c1 img{
-    width: 300px;
-    padding-left: 5%;
-    border-radius: 5px;
-}
-
-#c1 img:hover{
-    transform: scale(1.05);
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#seta{
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-#c2 img{
-    width: 200px;
-    border-radius: 5px;
-}
-
-#c2 img:hover{
-    transform: scale(1.05);
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#bolas{
+#c1, #c2 {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#c1 img, #c2 img {
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+#c1 img {
+    width: 300px;
+}
+
+#c2 img {
+    width: 200px;
+}
+
+#c1 img:hover, #c2 img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Setas entre imagens */
+#seta {
+    margin: 0 20px;
+}
+
+/* Benefícios */
+#bolas {
+    display: flex;
     justify-content: space-between;
+    padding: 2% 10%;
+    flex-wrap: wrap;
 }
 
-#local{
-    padding-right: 6%;
-    padding-top: 6%;
-    padding-left: 4%;
+.benefit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    max-width: 300px;
+    flex: 1;
+    box-sizing: border-box;
 }
 
-#local p{
-    padding-left: 95px;
+.benefit img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.benefit img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.benefit p {
+    margin-top: 10px;
     font-size: 15px;
+    text-align: center;
 }
 
-#preco{
-    padding-left: 16%;
-}
+/* Responsividade */
+@media (max-width: 768px) {
+    #clinica {
+        flex-direction: column;
+        padding: 5% 2%;
+    }
 
-#preco p{
-    padding-left: 110px;
-    font-size: 15px;
-}
+    #c1, #c2 {
+        margin-bottom: 20px;
+    }
 
-#doutora{
-    padding-right: 20%;
-}
+    #seta {
+        margin: 20px 0;
+    }
 
-#doutora p{
-    padding-left: 105px;
-    font-size: 15px;
+    #bolas {
+        flex-direction: column;
+        padding: 5% 2%;
+    }
 }
