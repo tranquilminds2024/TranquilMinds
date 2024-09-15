@@ -1,63 +1,135 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
     background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(../img/2.png);
-    display: flex;
-    margin: 0%;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-#caixa{
-    background-color: rgba(255, 255, 255, 0.44);
-    width: 400px;
-    height: 600px;
-    padding-top: 5%;
+/* Caixa do perfil */
+#caixa {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(79, 142, 145, 0.6);
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-#perfil{
+/* Imagem do perfil */
+#perfil {
     width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ccc;
 }
 
-h1{
-    font-size: 25px;
+/* Título */
+h1 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #333;
 }
 
-#info{
+/* Informações */
+#info {
+    margin: 10px 0;
+    font-size: 16px;
+    color: black;
+}
+
+#info span {
+    margin: 0 5px;
+}
+
+/* Botão de editar */
+#editar {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#editar img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+#editar:hover {
+    background-color: #45a049;
+}
+
+/* Sobre */
+#sobre {
+    margin: 20px 0;
+}
+
+#sobre h2 {
+    font-size: 20px;
+    color: black;
+}
+
+#sobre p {
+    font-size: 16px;
+    color: black;
+    line-height: 1.6;
+}
+
+/* Redes sociais */
+#redes {
+    margin: 20px 0;
+}
+
+#redes h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+#redes-links {
     display: flex;
     justify-content: center;
-    justify-content: space-between;
-    margin-right: 35%;
-    margin-left: 35%;
-    font-size: 15px;
-    color: grey;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
-#sobre{
-    padding-top: 5%;
-}
-
-#editar{
-    background-color: rgb(102, 177, 196);
-    border: none;
-    border-radius: 5px;
-}
-
-#lapis{
-    width: 10px;
-}
-
-#a{
+#redes-links a {
     text-decoration: none;
+    color: navy;
+    font-size: 16px;
+    transition: color 0.3s;
 }
 
-#redes a {
-    text-decoration: none;
+#redes-links a:hover {
+    color: #0056b3;
 }
 
-#redes a {
-    color: #000; 
-    font-size: 16px; 
-    margin: 0 10px; 
+/* Responsividade */
+@media (max-width: 768px) {
+    #perfil {
+        width: 120px;
+        height: 120px;
+    }
+
+    #editar {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    #redes-links {
+        flex-direction: column;
+    }
+
+    #redes-links a {
+        margin-bottom: 10px;
+    }
 }
