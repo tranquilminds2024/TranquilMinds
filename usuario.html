@@ -1,35 +1,42 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/logo primaria.png">
+    <link rel="shortcut icon" href="img/logo_primaria.png" type="image/png">
     <link rel="stylesheet" href="style/usuario.css">
     <title>Perfil de Usuário</title>
 </head>
 <body>
     <div id="caixa">
-        <img src="img/perfil-removebg-preview.png" id="perfil">
+        <img src="img/perfil-removebg-preview.png" id="perfil" alt="Imagem de perfil">
         <h1>Ágata Letícia</h1>
         <div id="info">
-            <h4>Ela/dela</h4>
-            <h4> - </h4>
-            <h4>17y</h4>
+            <span>Ela/dela</span>
+            <span> - </span>
+            <span>17 anos</span>
         </div>
-        <button id="editar"><img src="img/lapis-removebg-preview.png" id="lapis"> editar perfil</button>
+        <button id="editar">
+            <img src="img/lapis-removebg-preview.png" id="lapis" alt="Ícone de editar">
+            editar perfil
+        </button>
 
-        <div id="sobre">
+        <section id="sobre">
             <h2>Sobre Mim</h2>
-            <p>.......</p>
-        </div>
+            <p>Descreva aqui um pouco sobre você. Compartilhe seus interesses, hobbies e qualquer outra informação que você acha importante.</p>
+        </section>
 
         <hr>
 
-        <div id="redes">
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
-            <a href="#">Facebook</a>
-            <a href="#">Tiktok</a>
-        </div>
+        <section id="redes">
+            <h2>Redes Sociais</h2>
+            <div id="redes-links">
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+                <a href="#" aria-label="Facebook">Facebook</a>
+                <a href="#" aria-label="Tiktok">Tiktok</a>
+            </div>
+        </section>
     </div>
 </body>
 </html>
