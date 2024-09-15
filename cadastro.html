@@ -1,38 +1,36 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo primaria.png" type="image/x-icon">
     <link rel="stylesheet" href="style/cadastro.css">
-    <title>TranquilMinds</title>
+    <title>TranquilMinds - Cadastro</title>
 </head>
 <body>
 
     <header>
-        <img id="logo" src="img/logo primaria.png">
+        <img id="logo" src="img/logo primaria.png" alt="Logo">
     </header>
 
     <main>
-        
-        <form action="php/create.php" method="get">
+        <form id="cadastroForm">
             <div id="cadastro">
                 <h1>Cadastrar-se</h1>
 
-                <input class="login-input" placeholder="Nome" type="text" id="login" name="nome">
-                <input class="login-input" placeholder="Sobrenome" type="text" id="login" name="sobrenome"> <br>
-                <input class="login-input" placeholder="Email" type="text" id="login" name="email">
-                <input class="login-input" placeholder="Senha" type="password" name="senha" id="senha" name="senha"> <br>
-                <input class="login-input" placeholder="Confirmar senha" type="password" id="senha" name="confirmar"> <br>
+                <input class="login-input" placeholder="Nome" type="text" id="nome" required>
+                <input class="login-input" placeholder="Sobrenome" type="text" id="sobrenome" required> <br>
+                <input class="login-input" placeholder="Email" type="email" id="email" required>
+                <input class="login-input" placeholder="Senha" type="password" id="senha" required> <br>
+                <input class="login-input" placeholder="Confirmar senha" type="password" id="confirmarSenha" required> <br>
                 
-                <input type="submit" id="btn" value="Cadastrar"/>
-
-            
+                <input type="submit" id="btn" value="Cadastrar">
+                <p id="message"></p> <!-- Mensagem de erro ou sucesso -->
             </div> 
-        
         </form>
-
     </main>
+
+    <script src="script/cadastro.js"></script> <!-- Inclusão do JavaScript -->
     
 </body>
-
 </html>
